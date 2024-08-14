@@ -11,19 +11,15 @@
             gap: 100px; /* 控制图片之间的间距 */
         }
         .image-row img {
-            max-width: 30%; /* 确保图片适应容器大小 */
-            height: auto; /* 保持图片的原始比例 */
-        }
-        .first-image {
-            width: 300px; /* 设置图片的固定宽度 */
-            height: auto; /* 自动调整高度，保持比例 */
-            object-fit: contain; /* 保持图片内容的比例 */
+            height: 150px; /* 设置图片的固定高度 */
+            width: auto; /* 保持图片宽度按比例自动调整 */
+            object-fit: cover; /* 保持图片内容的比例，并裁剪多余部分 */
         }
     </style>
 </head>
 <body>
     <div class="image-row">
-        <img src="https://www.ntu.edu.sg/images/default-source/corporate/ntu_logo.png?sfvrsn=b5dd1d82_5" alt="Image 1" class="first-image">
+        <img src="https://www.ntu.edu.sg/images/default-source/corporate/ntu_logo.png?sfvrsn=b5dd1d82_5" alt="Image 1">
         <img src="https://github.com/ShenlinJ/re01-one/blob/main/%E7%AD%BE%E8%AF%81.jpg?raw=true" alt="Image 2">
     </div>
 
